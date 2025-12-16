@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Presentazione | Il Tuo Nome</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="index.html"><img class="brand__logo" src="assets/logo.png" alt="Logo" /></a>
+
+  <button class="burger" id="burger" aria-label="Apri menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav class="nav" id="nav">
+    <a href="index.html">Home</a>
+    <a class="is-active" href="presentazione.html">Presentazione</a>
+    <a href="curriculum.html">Curriculum</a>
+    <a href="contatti.html">Contatti</a>
+  </nav>
+</header>
+
+<main class="page">
+  <section class="section">
+    <h1 class="section__title">Presentazione Professionale</h1>
+    <p class="section__subtitle">
+      Una sintesi chiara del mio profilo, con focus su competenze e risultati.
+    </p>
+
+    <div class="card">
+      <div class="card__body">
+        <h2 class="h2">Profilo</h2>
+        <p class="p">
+          Yuri Scarzelletti è un esperto aspirante Capitano di lungo corso abilitato con il titolo professionale da comandante con oltre 10 anni di esperienza nel settore marittimo. La sua carriera è contrassegnata da numerose navigazioni e progetti di successo che dimostrano la sua dedizione e professionalità.
+        </p>
+
+        
+        <h2 class="h2">Punti di forza</h2>
+        <ul class="list">
+          <li>Leadership / Teamwork</li>
+          <li>Problem solving</li>
+          <li>Gestione procedure / sicurezza</li>
+        </ul>
+
+        <div class="cta-row">
+          <a class="btn" href="curriculum.html">Vai al Curriculum</a>
+          <a class="btn btn--ghost" href="contatti.html">Contattami</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Yuri Scarzelletti</p>
+  </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

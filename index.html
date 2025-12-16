@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV | Il Tuo Nome</title>
+  <meta name="description" content="Sito CV personale: presentazione, curriculum e contatti." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="index.html" aria-label="Home">
+    <img class="brand__logo" src="assets/logo.png" alt="Logo" />
+  </a>
+
+  <button class="burger" id="burger" aria-label="Apri menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav class="nav" id="nav">
+    <a class="is-active" href="index.html">Home</a>
+    <a href="presentazione.html">Presentazione</a>
+    <a href="curriculum.html">Curriculum</a>
+    <a href="contatti.html">Contatti</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero__bg" style="background-image:url('assets/hero.jpg')" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <div class="hero__card">
+        <h1 class="title">Benvenuti nel sito di <span class="accent">Il Tuo Nome</span></h1>
+        <p class="lead">
+          Qui trovi una presentazione professionale, il curriculum integrato e i contatti per collaborazioni.
+        </p>
+        <div class="cta-row">
+          <a class="btn" href="presentazione.html">Scopri di più</a>
+          <a class="btn btn--ghost" href="contatti.html">Invia un messaggio</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="stats__inner">
+      <div class="stat">
+        <div class="stat__num" data-count="10">0</div>
+        <div class="stat__label">Anni di esperienza</div>
+      </div>
+      <div class="stat">
+        <div class="stat__num" data-count="40">0</div>
+        <div class="stat__label">Mesi di esperienza</div>
+      </div>
+      <div class="stat">
+        <div class="stat__num" data-count="25">0</div>
+        <div class="stat__label">Progetti / imbarchi</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section__title">Esplora</h2>
+    <p class="section__subtitle">Vai subito alle sezioni principali del sito.</p>
+
+    <div class="grid">
+      <a class="cardLink" href="presentazione.html">
+        <div class="card">
+          <img class="card__img" src="assets/img-presentazione.jpg" alt="Presentazione" />
+          <div class="card__body">
+            <h3 class="card__title">Presentazione Professionale</h3>
+            <p class="card__text">Profilo, competenze e punti salienti.</p>
+            <span class="btn btn--ghost">Apri</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="cardLink" href="curriculum.html">
+        <div class="card">
+          <img class="card__img" src="assets/img-curriculum.jpg" alt="Curriculum" />
+          <div class="card__body">
+            <h3 class="card__title">Curriculum Integrato</h3>
+            <p class="card__text">Esperienze, formazione, certificazioni.</p>
+            <span class="btn btn--ghost">Apri</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Il Tuo Nome — Tutti i diritti riservati</p>
+  </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Curriculum | Yuri Scarzelletti</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="icon" href="assets/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="Yuri CV">
+  <meta name="application-name" content="Yuri CV">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#0c0c0f">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="index.html"><img class="brand__logo" src="assets/logo.png" alt="Logo" /></a>
+
+  <button class="burger" id="burger" aria-label="Apri menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav class="nav" id="nav">
+    <a href="index.html">Home</a>
+    <a href="presentazione.html">Presentazione</a>
+    <a class="is-active" href="curriculum.html">Curriculum</a>
+    <a href="contatti.html">Contatti</a>
+  </nav>
+</header>
+
+<main class="page">
+  <section class="section">
+    <h1 class="section__title">Curriculum Integrato</h1>
+    <p class="section__subtitle">Scarica il CV e consulta la versione online.</p>
+
+    <div class="card">
+      <div class="card__body">
+        <div class="cta-row">
+          <a class="btn" href="assets/cv.pdf" target="_blank" rel="noopener">Apri CV (PDF)</a>
+          <a class="btn btn--ghost" href="contatti.html">Richiedi info</a>
+        </div>
+
+        <hr class="hr"/>
+
+        <h2 class="h2">Esperienze</h2>
+        <div class="timeline">
+          <div class="tl">
+            <div class="tl__when">2023 – Oggi</div>
+            <div class="tl__what">
+              <strong>2^ Ufficiale di Coperta / Msc Crociere</strong>
+              <div class="muted">Deck Officer.</div>
+            </div>
+          </div>
+          <div class="tl">
+            <div class="tl__when">2015 – 2023</div>
+            <div class="tl__what">
+              <strong>Ufficiale di Coperta / Grimaldi Group</strong>
+              <div class="muted">Deck Officer & Chief Officer</div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="h2">Formazione</h2>
+        <ul class="list">
+          <li>Diploma Nautico — Istituto Tecnico Nautico Caboto Gaeta / 2014</li>
+          <li>Corso — Aspirante capitano di lungo corso / 2014</li>
+        </ul>
+
+        <h2 class="h2">Lingue</h2>
+        <ul class="list">
+          <li>Italiano — Madrelingua</li>
+          <li>Inglese — C1</li>
+          <li>Spagnolo — B1</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Yuri Scarzelletti</p>
+  </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
